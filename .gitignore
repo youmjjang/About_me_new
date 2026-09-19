@@ -3,7 +3,9 @@ data/
 .env
 .env.*
 !.env.example
+test-results/
+*.sqlite*
+
 .wrangler/
 .sites-runtime/
 dist/
-*.sqlite*

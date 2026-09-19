@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-19T11:57:23.044Z",
+  "environment": "Local Cloudflare workerd + D1; Microsoft Edge CDP virtual authenticators. Not physical-device confirmation. UI provider label 기기 자체 denotes emulated device only.",
+  "passed": [
+    "Original public images load",
+    "Register first key via navigator.credentials.create",
+    "Add second virtual authenticator",
+    "Two-key list screenshot",
+    "Delete first key",
+    "Login with remaining key via navigator.credentials.get",
+    "Three private notes",
+    "Logout hides private content",
+    "Mobile locked screen",
+    "No page JavaScript errors"
+  ]
+}

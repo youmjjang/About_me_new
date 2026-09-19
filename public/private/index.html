@@ -1,0 +1,12 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>나만의 기록 · YUMI</title><link rel="stylesheet" href="/private.css"><link rel="icon" href="/favicon.svg"></head>
+<body><header><a href="/">YUMI / PORTFOLIO</a><a href="/">공개 소개로 돌아가기 ↗</a></header>
+<main><p class="eyebrow">PRIVATE / 나만의 공간</p><div class="heading"><h1>나만의 기록</h1><span id="state">잠겨 있음</span></div>
+<p class="intro">공개 소개는 누구나 볼 수 있어요. 이곳의 기록은 내 패스키로 들어온 뒤에만 열립니다.</p>
+<p id="message" role="status" aria-live="polite"></p>
+<section id="locked" class="panel"><h2>비밀번호 없이 들어가기</h2><p>기기에 저장한 패스키로 본인을 확인합니다.</p><button id="login" class="primary">패스키로 로그인</button>
+<details><summary>처음이라면, 연습용 공간 만들기</summary><p>새 계정에는 서로 다른 가상 기록 3개가 만들어집니다. 기존 계정에 패스키를 추가하려면 먼저 로그인하세요.</p><label>연습용 별칭<input id="alias" maxlength="32" placeholder="예: 별빛 연습장" autocomplete="off"></label><div id="first-fields"></div><button id="register" class="primary">새 계정과 첫 패스키 등록</button></details></section>
+<section id="unlocked" hidden><div class="account-bar"><p><strong id="account-name"></strong>의 공간 <small>아래 내용은 모두 가상 자료입니다.</small></p><button id="logout">로그아웃</button></div><div id="notes" class="notes"></div>
+<section class="panel"><h2>내 패스키</h2><p>기기를 잃어버려도 들어올 수 있도록 서로 독립적인 저장 위치에 두 개를 준비하세요.</p><div id="keys"></div><details><summary>두 번째 패스키 추가하기</summary><div id="extra-fields"></div><button id="add" class="primary">현재 계정에 패스키 추가</button><p class="small">같은 저장 위치에서 추가가 막히면 보안 키나 다른 기기·패스키 관리자를 선택하세요. 5분이 지났다면 다시 로그인해야 합니다.</p></details></section></section>
+<aside class="panel muted"><h2>기기를 잃어버렸다면</h2><p>남아 있는 다른 패스키로 로그인하세요. 서버 목록에서 패스키를 삭제하면 해당 키로는 다시 들어올 수 없고, 모든 로그인도 종료됩니다.</p><p>마지막 패스키는 삭제할 수 없습니다. 기기와 동기화 계정까지 모두 잃어 사용 가능한 패스키가 0개라면 이 앱에서 계정을 복구할 수 없습니다. 새로 등록해도 기존 기록은 열리지 않습니다.</p><p class="small">동기화형 패스키는 같은 관리자의 다른 기기에도 나타날 수 있습니다. 다른 기기에 보이는 같은 패스키를 두 개의 독립된 열쇠로 세지 마세요.</p></aside>
+<details class="evidence"><summary>내 확인 기록</summary><p>현재 탭에서 발생한 요청·응답과 내 공개키를 JSON으로 저장합니다. 쿠키·세션값은 기록하지 않습니다. 실제 개인정보는 입력하지 마세요.</p><button id="export">확인 기록 내려받기</button><p id="record-count" class="small"></p></details>
+</main><footer>공개 소개와 비공개 기록은 별도로 제공됩니다.</footer><script src="/private.js" defer></script></body></html>

@@ -1,0 +1,21 @@
+{
+  "name": "about-me-new-passkeys",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "wrangler dev --config dist/server/wrangler.json --port 3000 --var ORIGIN:http://localhost:3000",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@simplewebauthn/server": "14.0.2",
+    "drizzle-kit": "0.31.10",
+    "drizzle-orm": "0.45.2",
+    "esbuild": "0.28.2",
+    "wrangler": "4.135.0"
+  }
+}
